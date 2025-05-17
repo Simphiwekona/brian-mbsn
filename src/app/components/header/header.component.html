@@ -1,0 +1,22 @@
+<header [class.scrolled]="isScrolled">
+  <div class="container">
+    <div class="logo">
+      <a href="#">MBSN</a>
+    </div>
+    
+    <button class="menu-toggle" (click)="toggleMenu()" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
+    <nav [class.active]="isMenuOpen">
+      <ul>
+        <li><a href="#about" (click)="closeMenu()">About</a></li>
+        <li><a href="#services" (click)="closeMenu()">Services</a></li>
+        <li><a href="#gallery" (click)="closeMenu()">Gallery</a></li>
+        <li><a href="#contact" (click)="closeMenu()">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
